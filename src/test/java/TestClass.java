@@ -43,6 +43,9 @@ public class TestClass extends BaseClass {
 		System.out.println("Test Complete");
 		System.out.println("New Statement");
 
+		System.out.println("New Statement2");
+		System.out.println("New Statement3");
+
 	}
 	
 }
