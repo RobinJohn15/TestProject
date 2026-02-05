@@ -41,6 +41,7 @@ public class TestClass extends BaseClass {
 	@Test
 	public void test() {
 		System.out.println("Test Complete");
+		System.out.println("New Statement");
 
 	}
 	
