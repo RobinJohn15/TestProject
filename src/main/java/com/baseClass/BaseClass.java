@@ -166,7 +166,14 @@ public class BaseClass {
 	public static void screenShot(String title) throws IOException {
 		TakesScreenshot tk=(TakesScreenshot)driver;
 		File source= tk.getScreenshotAs(OutputType.FILE);
-		File target=new File("D:\\Selenium\\JUnit\\target\\"+title+".png");
+		File target=new File("D:\\Selenium\\GitAndMaven\\target\\"+title+".png");
+		Files.copy(source.toPath(),target.toPath(),StandardCopyOption.REPLACE_EXISTING);
+	}
+	
+	public static void screenShot() throws IOException {
+		TakesScreenshot tk=(TakesScreenshot)driver;
+		File source= tk.getScreenshotAs(OutputType.FILE);
+		File target=new File("D:\\Selenium\\GitAndMaven\\target\\fk.png");
 		Files.copy(source.toPath(),target.toPath(),StandardCopyOption.REPLACE_EXISTING);
 	}
 
